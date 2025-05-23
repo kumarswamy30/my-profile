@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katari Kumar Swamy - Full Stack Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> </head>
+<body class="dark-theme">
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">KS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-particles"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="profile-container">
+                        <img src="profile.jpg" alt="Katari Kumar Swamy" class="profile-img">
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <h1 class="hero-title">Kumar Swamy Katari</h1>
+                    <h2 class="hero-subtitle">Full Stack Developer</h2>
+                    <p class="hero-description">Passionate about creating elegant web solutions with modern technologies. Specializing in Java, JavaScript, HTML, CSS, and responsive design.</p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="resume.html" class="btn btn-primary btn-enhanced" target="_blank" rel="noopener noreferrer">
+                            <span>Download CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-enhanced">
+                            <span>Contact Me</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <p class="lead mb-4">I'm a beginner Full Stack Developer with a strong foundation in both front-end and back-end technologies. My journey in web development started with mastering HTML, CSS, and JavaScript, and has expanded to include Java servlets for server-side development.</p>
+                    <p class="mb-4">I recently completed a 4-week virtual internship program in Web Development at CODSOFT, where I had the opportunity to work on real-world projects and enhance my skills. I'm particularly interested in creating responsive, user-friendly web applications with clean, maintainable code.</p>
+                    <p>My approach to development combines technical expertise with creative problem-solving, always focusing on delivering solutions that meet both user needs and business objectives.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="section-subtitle">Education</h3>
+                    <div class="mb-4 education-card">
+                        <h4>B.Tech in Information Technology</h4>
+                        <p>2022 - 2026</p>
+                        <p>Studied fundamental computer science concepts, including data structures, algorithms, database management, and software engineering principles.</p>
+                    </div>
+                    <h3 class="section-subtitle">Experience</h3>
+                    <div class="education-card">
+                        <h4>Web Development Intern</h4>
+                        <p>CODSOFT | June 2024 - July 2024</p>
+                        <p>Worked on multiple web development projects, focusing on front-end design and back-end functionality. Collaborated with team members to create responsive and user-friendly web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h3 class="section-subtitle">Technical Skills</h3>
+
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>HTML5 & CSS3</h5>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-enhanced">
+                        <div class="progress-bar-enhanced" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Java</h5>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-enhanced">
+                        <div class="progress-bar-enhanced" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Java Servlets</h5>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress-enhanced">
+                        <div class="progress-bar-enhanced" data-width="70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>JavaScript</h5>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-enhanced">
+                        <div class="progress-bar-enhanced" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Bootstrap</h5>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress-enhanced">
+                        <div class="progress-bar-enhanced" data-width="70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>SQL</h5>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="progress-enhanced">
+                        <div class="progress-bar-enhanced" data-width="65%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-left">
+                <h3 class="section-subtitle">Development Areas</h3>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h4>Front-End Development</h4>
+                            <p>Creating responsive, interactive UIs using HTML, CSS, and JavaScript. Proficient with Bootstrap for modern designs.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Back-End Development</h4>
+                            <p>Building server-side logic using Java Servlets. Handling data processing and business logic implementation.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Database Management</h4>
+                            <p>Designing and implementing database schemas. Writing efficient SQL queries for data manipulation.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Responsive Design</h4>
+                            <p>Creating websites that work seamlessly across all devices and screen sizes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-card">
+                        <div class="cert-body">
+                            <img src="CodSoft.jpg" alt="CODSOFT Logo" class="cert-logo">
+                            <h4>Web Development Internship</h4>
+                            <p>CODSOFT</p>
+                            <p>Completed 4 weeks of virtual internship program in Web Development with wonderful remarks.</p>
+                            <p>Issued: July 2024</p>
+                            <button type="button" class="btn btn-primary btn-enhanced" data-bs-toggle="modal" data-bs-target="#certModal1">
+                                <span>View Certificate</span>
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-card">
+                        <div class="cert-body">
+                            <img src="coursera.jpg" alt="Johns Hopkins University Logo" class="cert-logo">
+                            <h4>HTML, CSS, and JavaScript for Web Developers</h4>
+                            <p>Johns Hopkins University (Coursera)</p>
+                            <p>Completed the online non-credit course covering web development fundamentals.</p>
+                            <p>Issued: December 2023</p>
+                            <button type="button" class="btn btn-primary btn-enhanced" data-bs-toggle="modal" data-bs-target="#certModal2">
+                                <span>View Certificate</span>
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-card">
+                        <div class="cert-body">
+                            <img src="edx.jpg" alt="W3Cx Logo" class="cert-logo">
+                            <h4>JS.0x: JavaScript Introduction</h4>
+                            <p>W3Cx (World Wide Web Consortium)</p>
+                            <p>Successfully completed the introduction to JavaScript course offered by W3Cx.</p>
+                            <p>Issued: April 2024</p>
+                            <button type="button" class="btn btn-primary btn-enhanced" data-bs-toggle="modal" data-bs-target="#certModal3">
+                                <span>View Certificate</span>
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h3 class="section-subtitle">Get In Touch</h3>
+                    <p class="mb-4">Feel free to reach out to me for any inquiries, collaborations, or opportunities. I'm always open to discussing new projects and ideas.</p>
+
+                    <div class="contact-info">
+    <i class="fas fa-envelope contact-icon"></i>
+    <div>
+        <h5 class="mb-0">Email</h5>
+        <p class="mb-0">katarikumarswamy@gmail.com</p>
+    </div>
+</div>
+
+<div class="contact-info">
+    <i class="fas fa-phone contact-icon"></i>
+    <div>
+        <h5 class="mb-0">Phone</h5>
+        <p class="mb-0">+91 6281673670</p>
+    </div>
+</div>
+
+<div class="contact-info">
+    <i class="fas fa-map-marker-alt contact-icon"></i>
+    <div>
+        <h5 class="mb-0">Location</h5>
+        <p class="mb-0">Vijayawada, India</p>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h5>Connect with me:</h5>
+    <div class="d-flex mt-3">
+        <a href="https://www.linkedin.com/in/katari-kumar-swamy-0b9052314" class="social-link me-3" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+            <a href="https://github.com/kumarswamy30" class="social-link me-3" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+            </a>
+        <!-- FIXED GMAIL BUTTON -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=katarikumarswamy@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kumar%20Swamy,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0A%0A" class="social-link me-3" target="_blank" rel="noopener noreferrer" title="Send Email via Gmail">
+                <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/kumarswamykatari" class="social-link me-3" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form p-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-enhanced">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div id="messageStatus" class="mt-3"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <div class="social-links mb-4">
+            <a href="https://www.linkedin.com/in/katari-kumar-swamy-0b9052314" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/kumarswamy30" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- FIXED GMAIL BUTTON IN FOOTER -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=katarikumarswamy@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kumar%20Swamy,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0A%0A" class="social-link" target="_blank" rel="noopener noreferrer" title="Send Email via Gmail">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/kumarswamykatari" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Katari Kumar Swamy. All rights reserved.</p>
+    </div>
+</footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div class="modal fade" id="certModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CODSOFT Web Development Internship Certificate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="CodSoft.jpg" alt="CODSOFT Certificate" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Johns Hopkins University Web Development Certificate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="coursera.jpg" alt="Johns Hopkins Certificate" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">W3Cx JavaScript Introduction Certificate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="edx.jpg" alt="W3Cx Certificate" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('fade-out');
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        const hamburger = document.getElementById('hamburger');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Hamburger Menu Animation
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        navbarToggler.addEventListener('click', function() {
+            hamburger.classList.toggle('open');
+        });
+
+        // Close navbar when clicking on nav link (mobile)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                    hamburger.classList.remove('open');
+                }
+            });
+        });
+
+ // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const hrefAttribute = this.getAttribute('href');
+
+                if (hrefAttribute === '#home') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const target = document.querySelector(hrefAttribute);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Active Navigation Highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNavigation() {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                // Adjusted offset for better highlighting as sections now have background
+                if (scrollY >= sectionTop - 250) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavigation);
+        document.addEventListener('DOMContentLoaded', highlightNavigation); // Call on load too
+
+        // Skill Progress Bars Animation
+        const progressBars = document.querySelectorAll('.progress-bar-enhanced');
+
+        function animateProgressBars() {
+            progressBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    const width = bar.getAttribute('data-width');
+                    bar.style.width = width;
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateProgressBars);
+
+        // Floating Particles Animation (for Hero)
+        function createFloatingParticles() {
+            const container = document.querySelector('.floating-particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 2) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        createFloatingParticles();
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+// EmailJS Configuration
+const EMAILJS_CONFIG = {
+    SERVICE_ID: 'service_igcso7d',
+    TEMPLATE_ID: 'template_contact_us',
+    AUTO_REPLY_TEMPLATE: 'template_auto_reply',
+    PUBLIC_KEY: 'gDbU1408cKTkFElcB'
+};
+
+// Initialize EmailJS
+emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+
+// Contact Form Handling with Email Functionality
+const contactForm = document.getElementById('contactForm');
+const messageStatus = document.getElementById('messageStatus');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Get form data
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+        };
+
+        // Validate form data
+        if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+            showMessage('Please fill in all fields.', 'error');
+            return;
+        }
+
+        // Show loading state
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+
+        try {
+            // Send email to you (the portfolio owner)
+            await emailjs.send(
+                EMAILJS_CONFIG.SERVICE_ID,
+                EMAILJS_CONFIG.TEMPLATE_ID,
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message,
+                    to_email: 'katarikumarswamy@gmail.com'
+                }
+            );
+
+            // Send auto-reply to the user - FIXED VERSION
+            await emailjs.send(
+                EMAILJS_CONFIG.SERVICE_ID,
+                EMAILJS_CONFIG.AUTO_REPLY_TEMPLATE,
+                {
+                    to_name: formData.name,
+                    to_email: formData.email,
+                    user_name: formData.name,  // Alternative parameter name
+                    user_email: formData.email, // Alternative parameter name
+                    subject: formData.subject,  // Use 'subject' instead of 'original_subject'
+                    original_subject: formData.subject, // Keep both for compatibility
+                    reply_subject: `Re: ${formData.subject}`, // Professional reply format
+                    inquiry_subject: formData.subject, // Another common parameter name
+                    message_subject: formData.subject, // Yet another option
+                    original_message: formData.message // Include original message if needed
+                }
+            );
+
+            showMessage(`Thank you, ${formData.name}! Your message has been sent successfully. You should receive a confirmation email shortly.`, 'success');
+            contactForm.reset();
+
+        } catch (error) {
+            console.error('Email sending failed:', error);
+            showMessage('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
+        } finally {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+}
+
+// Function to show status messages
+function showMessage(message, type) {
+    const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
+    messageStatus.innerHTML = `<div class="alert ${alertClass}">${message}</div>`;
+    
+    // Clear message after 8 seconds
+    setTimeout(() => {
+        messageStatus.innerHTML = '';
+    }, 8000);
+}
+
+
+
+        // Form Field Focus Effects
+        const formControls = document.querySelectorAll('.form-control');
+
+        formControls.forEach(control => {
+            control.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+
+            control.addEventListener('blur', function() {
+                if (this.value === '') {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+
+        // Intersection Observer for Advanced Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+
+                    // Trigger progress bar animations when skills section is visible
+                    if (entry.target.id === 'skills') {
+                        setTimeout(animateProgressBars, 200);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animations
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Typewriter Effect for Hero Title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+
+            type();
+        }
+
+        // Initialize typewriter effect after page load
+        setTimeout(() => {
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                typeWriter(heroTitle, originalText, 80);
+            }
+        }, 1500);
+
+        // Parallax Effect for Hero Section
+
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+
+        // Dynamic Cursor Effect
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        cursor.style.cssText = `
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: transform 0.1s ease;
+            transform: translate(-50%, -50%);
+        `;
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Scale cursor on hover over interactive elements
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.matches('a, button, .btn, .card, .skill-card, .cert-card')) {
+                cursor.style.transform = 'translate(-50%, -50%) scale(2)';
+            } else {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+            }
+        });
+
+
+        // Performance monitoring
+        if ('performance' in window) {
+            window.addEventListener('load', function() {
+                const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+                console.log(`Page loaded in ${loadTime}ms`);
+            });
+        }
+
+        // Error handling
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript error:', e.error);
+        });
+
+        // Service Worker for offline support (progressive web app)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(registration => console.log('SW registered'))
+                .catch(error => console.log('SW registration failed'));
+        }
+    </script>
+</body>
+</html>

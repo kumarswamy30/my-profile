@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katari Kumar Swamy - Full Stack Developer Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            font-size: 11pt;
+        }
+
+        .resume-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            padding: 0.5in;
+            min-height: 11in;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .title {
+            font-size: 16pt;
+            color: #3498db;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 10pt;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-item i {
+            color: #3498db;
+            width: 12px;
+        }
+
+        /* Two Column Layout */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Left Column */
+        .left-column {
+            padding-right: 20px;
+        }
+
+        /* Right Column */
+        .right-column {
+            padding-left: 20px;
+            border-left: 1px solid #ddd;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title i {
+            color: #3498db;
+            font-size: 12pt;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .skill-category h4 {
+            font-size: 11pt;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            font-size: 10pt;
+            margin-bottom: 4px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "▪";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .skill-percentage {
+            font-size: 9pt;
+            color: #7f8c8d;
+            float: right;
+        }
+
+        /* Languages */
+        .languages {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10pt;
+            padding: 5px 0;
+        }
+
+        .language-level {
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        /* Education & Experience Items */
+        .item {
+            margin-bottom: 18px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+
+        .item-subtitle {
+            font-size: 11pt;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .item-duration {
+            font-size: 9pt;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .item-description {
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .item-description ul {
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+
+        .item-description li {
+            margin-bottom: 3px;
+        }
+
+        /* Objective */
+        .objective {
+            font-size: 11pt;
+            line-height: 1.5;
+            text-align: justify;
+            color: #555;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+
+        /* Certifications Grid */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .cert-item {
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 3px solid #e74c3c;
+        }
+
+        .cert-title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+
+        .cert-issuer {
+            font-size: 10pt;
+            color: #3498db;
+            margin-bottom: 2px;
+        }
+
+        .cert-date {
+            font-size: 9pt;
+            color: #7f8c8d;
+        }
+
+        /* Interests */
+        .interests-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .interest-item {
+            font-size: 10pt;
+            padding: 8px;
+            background: #f8f9fa;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .interest-item i {
+            color: #3498db;
+            margin-right: 5px;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body {
+                font-size: 10pt;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .resume-container {
+                padding: 0.3in;
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            
+            .item {
+                page-break-inside: avoid;
+            }
+            
+            a {
+                color: #333 !important;
+                text-decoration: none;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .left-column, .right-column {
+                padding: 0;
+                border: none;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .name {
+                font-size: 24pt;
+            }
+        }
+
+        /* Additional styling for professional appearance */
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .grade {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">KATARI KUMAR SWAMY</h1>
+            <div class="title">Full Stack Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>katarikumarswamy@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 6281673670</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Vijayawada, India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>https://www.linkedin.com/in/katari-kumar-swamy-0b9052314</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>https://github.com/kumarswamy30</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Technical Skills -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-code"></i>
+                        Technical Skills
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <ul class="skill-list">
+                                <li>Java <span class="skill-percentage">75%</span></li>
+                                <li>JavaScript <span class="skill-percentage">75%</span></li>
+                                <li>C Programming <span class="skill-percentage">65%</span></li>
+                                <li>Python <span class="skill-percentage">50%</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Web Technologies</h4>
+                            <ul class="skill-list">
+                                <li>HTML5 & CSS3 <span class="skill-percentage">90%</span></li>
+                                <li>Java Servlets <span class="skill-percentage">70%</span></li>
+                                <li>Bootstrap <span class="skill-percentage">70%</span></li>
+                                <li>Responsive Design <span class="skill-percentage">85%</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Database & Tools</h4>
+                        <ul class="skill-list">
+                            <li>SQL/MySQL <span class="skill-percentage">65%</span></li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Version Control (Git)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-language"></i>
+                        Languages
+                    </h2>
+                    <div class="languages">
+                        <div class="language-item">
+                            <span>English</span>
+                            <span class="language-level">Fluent</span>
+                        </div>
+                        <div class="language-item">
+                            <span>Telugu</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span>Hindi</span>
+                            <span class="language-level">Conversational</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-certificate"></i>
+                        Certifications
+                    </h2>
+                    <div class="cert-grid">
+                        <div class="cert-item">
+                            <div class="cert-title">Web Development Internship</div>
+                            <div class="cert-issuer">CODSOFT</div>
+                            <div class="cert-date">July 2024</div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-title">HTML, CSS, JavaScript for Web Developers</div>
+                            <div class="cert-issuer">Johns Hopkins University (Coursera)</div>
+                            <div class="cert-date">December 2023</div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-title">JavaScript Introduction</div>
+                            <div class="cert-issuer">W3Cx via edX</div>
+                            <div class="cert-date">April 2024</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interests -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-heart"></i>
+                        Interests
+                    </h2>
+                    <div class="interests-list">
+                        <div class="interest-item">
+                            <i class="fas fa-film"></i>Movies
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-laptop-code"></i>Web Technologies
+                        </div>
+                        <div class="interest-item">
+                            <i class="fab fa-osi"></i>Open Source
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Professional Objective -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-bullseye"></i>
+                        Professional Objective
+                    </h2>
+                    <div class="objective">
+                        Passionate beginner Full Stack Developer with a strong foundation in both front-end and back-end technologies. Seeking a responsible career opportunity to utilize my training in web development while making a significant contribution to innovative projects and organizational success.
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h2>
+                    <div class="item">
+                        <div class="item-title">Bachelor of Technology in Information Technology</div>
+                        <div class="item-subtitle">Jawaharlal Nehru Technological University, Vizianagaram</div>
+                        <div class="item-duration">August 2022 - May 2026 (Expected)</div>
+                        <div class="item-description">
+                            Studying fundamental computer science concepts including data structures, algorithms, database management, and software engineering principles.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Intermediate (12th Grade)</div>
+                        <div class="item-subtitle">Sri Chaitanya College, Vijayawada</div>
+                        <div class="item-duration">June 2020 - May 2022</div>
+                        <div class="item-description">
+                            <span class="grade">CGPA: 9.5/10</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Secondary School Certificate (10th Grade)</div>
+                        <div class="item-subtitle">Sri Chaitanya Techno School, Vijayawada</div>
+                        <div class="item-duration">Completed: May 2020</div>
+                        <div class="item-description">
+                            <span class="grade">CGPA: 9.7/10</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Experience -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i>
+                        Professional Experience
+                    </h2>
+                    <div class="item">
+                        <div class="item-title">Web Development Intern</div>
+                        <div class="item-subtitle">CODSOFT</div>
+                        <div class="item-duration">June 2024 - July 2024 (4 weeks)</div>
+                        <div class="item-description">
+                            <ul>
+                                <li>Completed virtual internship program in Web Development with excellent remarks</li>
+                                <li>Worked on multiple web development projects focusing on front-end design and back-end functionality</li>
+                                <li>Collaborated with team members to create responsive and user-friendly web applications</li>
+                                <li>Gained hands-on experience with real-world development scenarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Key Projects & Achievements -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-project-diagram"></i>
+                        Key Projects & Achievements
+                    </h2>
+                    <div class="item">
+                        <div class="item-title">Portfolio Website</div>
+                        <div class="item-description">
+                            Developed a comprehensive personal portfolio showcasing technical skills and projects with responsive design and modern UI/UX principles.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Responsive Web Applications</div>
+                        <div class="item-description">
+                            Created multiple projects during CODSOFT internship, focusing on responsive design and cross-browser compatibility. Applied data structures and algorithms knowledge to optimize web applications.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Personal Attributes -->
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-user-check"></i>
+                        Personal Attributes
+                    </h2>
+                    <div class="item-description">
+                        <ul>
+                            <li><strong>Problem-Solving:</strong> Strong analytical thinking and creative approach to technical challenges</li>
+                            <li><strong>Team Collaboration:</strong> Experience working in virtual team environments</li>
+                            <li><strong>Continuous Learning:</strong> Actively pursuing new technologies and development methodologies</li>
+                            <li><strong>Attention to Detail:</strong> Focus on creating clean, maintainable, and efficient code</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Print Button (hidden in print) -->
+    <div style="text-align: center; margin: 20px; padding: 20px;">
+        <button onclick="window.print()" style="background: #3498db; color: white; padding: 12px 24px; border: none; border-radius: 5px; font-size: 14px; cursor: pointer;">
+            <i class="fas fa-print"></i> Print / Save as PDF
+        </button>
+        <p style="margin-top: 10px; font-size: 12px; color: #666;">
+            Use your browser's print function to save as PDF (Ctrl+P or Cmd+P)
+        </p>
+    </div>
+
+    <style>
+        @media print {
+            button, .print-instructions { display: none !important; }
+        }
+    </style>
+</body>
+</html>
