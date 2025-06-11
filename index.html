@@ -62,10 +62,10 @@
                     <h2 class="hero-subtitle">Full Stack Developer</h2>
                     <p class="hero-description">Passionate about creating elegant web solutions with modern technologies. Specializing in Java, JavaScript, HTML, CSS, and responsive design.</p>
                     <div class="d-flex flex-wrap gap-3 mt-4">
-                        <a href="resume.html" class="btn btn-primary btn-enhanced" target="_blank" rel="noopener noreferrer">
-                            <span>Download CV</span>
-                            <i class="fas fa-download"></i>
-                        </a>
+                        <button class="btn btn-primary btn-enhanced" onclick="downloadAndOpenCV()">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                        </button>
                         <a href="#contact" class="btn btn-outline-light btn-enhanced">
                             <span>Contact Me</span>
                             <i class="fas fa-envelope"></i>
@@ -581,6 +581,115 @@
                 behavior: 'smooth'
             });
         });
+        // CV Download AND Open Functionality
+function downloadAndOpenCV() {
+    // First, download the file
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'MyResume.pdf';
+    downloadLink.download = 'Kumar_Swamy_Katari_Resume.pdf';
+    downloadLink.style.display = 'none';
+    
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+    
+    // Then, open the file in a new tab (slight delay to ensure download starts first)
+    setTimeout(() => {
+        window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+    }, 100);
+    
+    // Show success message
+    showDownloadAndOpenMessage();
+}
+
+// Show download and open confirmation message
+function showDownloadAndOpenMessage() {
+    const message = document.createElement('div');
+    message.innerHTML = `
+        <div class="alert alert-success position-fixed" style="top: 20px; right: 20px; z-index: 9999; max-width: 300px;">
+            <i class="fas fa-check-circle me-2"></i>
+            CV is downloading and opening in a new tab!
+        </div>
+    `;
+    
+    document.body.appendChild(message);
+    
+    // Remove message after 4 seconds
+    setTimeout(() => {
+        if (document.body.contains(message)) {
+            document.body.removeChild(message);
+        }
+    }, 4000);
+}
+
+// Advanced: Download and Open with better error handling
+async function downloadAndOpenCVAdvanced() {
+    try {
+        // First, try to download the file
+        const response = await fetch('MyResume.pdf');
+        
+        if (!response.ok) {
+            throw new Error('PDF file not found');
+        }
+        
+        const blob = await response.blob();
+        
+        // Create download link
+        const url = window.URL.createObjectURL(blob);
+        const downloadLink = document.createElement('a');
+        downloadLink.href = url;
+        downloadLink.download = 'Kumar_Swamy_Katari_Resume.pdf';
+        downloadLink.style.display = 'none';
+        
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        
+        // Open in new tab
+        setTimeout(() => {
+            window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+        }, 100);
+        
+        // Clean up
+        window.URL.revokeObjectURL(url);
+        
+        showDownloadAndOpenMessage();
+        
+    } catch (error) {
+        console.error('Error accessing PDF:', error);
+        
+        // Fallback: just open the file
+        window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+        
+        // Show fallback message
+        const message = document.createElement('div');
+        message.innerHTML = `
+            <div class="alert alert-info position-fixed" style="top: 20px; right: 20px; z-index: 9999; max-width: 300px;">
+                <i class="fas fa-info-circle me-2"></i>
+                CV opened in new tab. Right-click and save to download.
+            </div>
+        `;
+        document.body.appendChild(message);
+        
+        setTimeout(() => {
+            if (document.body.contains(message)) {
+                document.body.removeChild(message);
+            }
+        }, 5000);
+    }
+}
+
+// Alternative: User choice approach
+function handleCVClick() {
+    // Create a small modal or use confirm to ask user preference
+    const userChoice = confirm("Would you like to download the CV?\n\nClick 'OK' to download and view\nClick 'Cancel' to just view online");
+    
+    if (userChoice) {
+        downloadAndOpenCV();
+    } else {
+        window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+    }
+}
 // EmailJS Configuration
 const EMAILJS_CONFIG = {
     SERVICE_ID: 'service_igcso7d',
