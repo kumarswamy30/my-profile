@@ -8,7 +8,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"> </head>
+    <link href="style.css" rel="stylesheet">
+</head>
 <body class="dark-theme">
     <div class="loading" id="loading">
         <div class="spinner"></div>
@@ -17,7 +18,7 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="#home">KS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <div class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
@@ -61,7 +62,7 @@
                     <h1 class="hero-title">Kumar Swamy Katari</h1>
                     <h2 class="hero-subtitle">Full Stack Developer</h2>
                     <p class="hero-description">Passionate about creating elegant web solutions with modern technologies. Specializing in Java, JavaScript, HTML, CSS, and responsive design.</p>
-                    <div class="d-flex flex-wrap gap-3 mt-4">
+                    <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
                         <button class="btn btn-primary btn-enhanced" onclick="downloadAndOpenCV()">
                         <span>Download CV</span>
                         <i class="fas fa-download"></i>
@@ -81,22 +82,29 @@
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <p class="lead mb-4">I'm a beginner Full Stack Developer with a strong foundation in both front-end and back-end technologies. My journey in web development started with mastering HTML, CSS, and JavaScript, and has expanded to include Java servlets for server-side development.</p>
-                    <p class="mb-4">I recently completed a 4-week virtual internship program in Web Development at CODSOFT, where I had the opportunity to work on real-world projects and enhance my skills. I'm particularly interested in creating responsive, user-friendly web applications with clean, maintainable code.</p>
-                    <p>My approach to development combines technical expertise with creative problem-solving, always focusing on delivering solutions that meet both user needs and business objectives.</p>
+                    <h3 class="section-subtitle" style="text-align: left; margin-bottom: 1rem;">Who I Am</h3>
+                    <div class="education-card mb-4">
+                        <p class="lead mb-0">I'm a beginner Full Stack Developer with a strong foundation in both front-end and back-end technologies. My journey in web development started with mastering HTML, CSS, and JavaScript, and has expanded to include Java servlets for server-side development.</p>
+                    </div>
+                    <div class="education-card mb-4">
+                        <p class="mb-0">I recently completed a 4-week virtual internship program in Web Development at CODSOFT, where I had the opportunity to work on real-world projects and enhance my skills. I'm particularly interested in creating responsive, user-friendly web applications with clean, maintainable code.</p>
+                    </div>
+                    <div class="education-card">
+                        <p class="mb-0">My approach to development combines technical expertise with creative problem-solving, always focusing on delivering solutions that meet both user needs and business objectives.</p>
+                    </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <h3 class="section-subtitle">Education</h3>
-                    <div class="mb-4 education-card">
+                    <div class="education-card mb-4">
+                        <h3 class="section-subtitle" style="text-align: left; margin-bottom: 1rem;">Education</h3>
                         <h4>B.Tech in Information Technology</h4>
                         <p>2022 - 2026</p>
-                        <p>Studied fundamental computer science concepts, including data structures, algorithms, database management, and software engineering principles.</p>
+                        <p class="mb-0">Studied fundamental computer science concepts, including data structures, algorithms, database management, and software engineering principles.</p>
                     </div>
-                    <h3 class="section-subtitle">Experience</h3>
                     <div class="education-card">
+                        <h3 class="section-subtitle" style="text-align: left; margin-bottom: 1rem;">Experience</h3>
                         <h4>Web Development Intern</h4>
                         <p>CODSOFT | June 2024 - July 2024</p>
-                        <p>Worked on multiple web development projects, focusing on front-end design and back-end functionality. Collaborated with team members to create responsive and user-friendly web applications.</p>
+                        <p class="mb-0">Worked on multiple web development projects, focusing on front-end design and back-end functionality. Collaborated with team members to create responsive and user-friendly web applications.</p>
                     </div>
                 </div>
             </div>
@@ -283,47 +291,46 @@
                     <p class="mb-4">Feel free to reach out to me for any inquiries, collaborations, or opportunities. I'm always open to discussing new projects and ideas.</p>
 
                     <div class="contact-info">
-    <i class="fas fa-envelope contact-icon"></i>
-    <div>
-        <h5 class="mb-0">Email</h5>
-        <p class="mb-0">katarikumarswamy@gmail.com</p>
-    </div>
-</div>
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h5 class="mb-0">Email</h5>
+                            <p class="mb-0">katarikumarswamy@gmail.com</p>
+                        </div>
+                    </div>
 
-<div class="contact-info">
-    <i class="fas fa-phone contact-icon"></i>
-    <div>
-        <h5 class="mb-0">Phone</h5>
-        <p class="mb-0">+91 6281673670</p>
-    </div>
-</div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div>
+                            <h5 class="mb-0">Phone</h5>
+                            <p class="mb-0">+91 6281673670</p>
+                        </div>
+                    </div>
 
-<div class="contact-info">
-    <i class="fas fa-map-marker-alt contact-icon"></i>
-    <div>
-        <h5 class="mb-0">Location</h5>
-        <p class="mb-0">Vijayawada, India</p>
-    </div>
-</div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h5 class="mb-0">Location</h5>
+                            <p class="mb-0">Vijayawada, India</p>
+                        </div>
+                    </div>
 
-<div class="mt-4">
-    <h5>Connect with me:</h5>
-    <div class="d-flex mt-3">
-        <a href="https://www.linkedin.com/in/katari-kumar-swamy-0b9052314" class="social-link me-3" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
-        </a>
-            <a href="https://github.com/kumarswamy30" class="social-link me-3" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i>
-            </a>
-        <!-- FIXED GMAIL BUTTON -->
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=katarikumarswamy@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kumar%20Swamy,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0A%0A" class="social-link me-3" target="_blank" rel="noopener noreferrer" title="Send Email via Gmail">
-                <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.instagram.com/kumarswamykatari" class="social-link me-3" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                </div>
+                    <div class="mt-4">
+                        <h5>Connect with me:</h5>
+                        <div class="d-flex mt-3">
+                            <a href="https://www.linkedin.com/in/katari-kumar-swamy-0b9052314" class="social-link me-3" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/kumarswamy30" class="social-link me-3" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=katarikumarswamy@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kumar%20Swamy,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0A%0A" class="social-link me-3" target="_blank" rel="noopener noreferrer" title="Send Email via Gmail">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.instagram.com/kumarswamykatari" class="social-link me-3" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-7" data-aos="fade-left">
@@ -361,26 +368,25 @@
         </div>
     </section>
 
-<footer>
-    <div class="container">
-        <div class="social-links mb-4">
-            <a href="https://www.linkedin.com/in/katari-kumar-swamy-0b9052314" class="social-link" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/kumarswamy30" class="social-link" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-            </a>
-            <!-- FIXED GMAIL BUTTON IN FOOTER -->
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=katarikumarswamy@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kumar%20Swamy,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0A%0A" class="social-link" target="_blank" rel="noopener noreferrer" title="Send Email via Gmail">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://www.instagram.com/kumarswamykatari" class="social-link" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i>
-            </a>
+    <footer>
+        <div class="container">
+            <div class="social-links mb-4">
+                <a href="https://www.linkedin.com/in/katari-kumar-swamy-0b9052314" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/kumarswamy30" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=katarikumarswamy@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kumar%20Swamy,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0A%0A" class="social-link" target="_blank" rel="noopener noreferrer" title="Send Email via Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/kumarswamykatari" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Katari Kumar Swamy. All rights reserved.</p>
         </div>
-        <p>&copy; 2025 Katari Kumar Swamy. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 
     <a href="#" class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
@@ -431,15 +437,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-
-        // Initialize AOS (Animate On Scroll)
         AOS.init({
             duration: 1000,
             once: true,
             offset: 100
         });
 
-        // Loading Screen
         window.addEventListener('load', function() {
             const loading = document.getElementById('loading');
             setTimeout(() => {
@@ -450,10 +453,7 @@
             }, 1000);
         });
 
-        // Navbar Scroll Effect
         const navbar = document.getElementById('navbar');
-        const hamburger = document.getElementById('hamburger');
-
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -462,24 +462,25 @@
             }
         });
 
-        // Hamburger Menu Animation
         const navbarToggler = document.querySelector('.navbar-toggler');
+        const hamburger = document.getElementById('hamburger');
+        const body = document.body;
         navbarToggler.addEventListener('click', function() {
             hamburger.classList.toggle('open');
+            body.classList.toggle('menu-open');
         });
 
-        // Close navbar when clicking on nav link (mobile)
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function() {
                 const navbarCollapse = document.querySelector('.navbar-collapse');
                 if (navbarCollapse.classList.contains('show')) {
                     new bootstrap.Collapse(navbarCollapse).hide();
                     hamburger.classList.remove('open');
+                    body.classList.remove('menu-open');
                 }
             });
         });
 
- // Smooth Scrolling for Navigation Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -502,18 +503,13 @@
             });
         });
 
-        // Active Navigation Highlighting
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
-
         function highlightNavigation() {
             let current = '';
-
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-
-                // Adjusted offset for better highlighting as sections now have background
                 if (scrollY >= sectionTop - 250) {
                     current = section.getAttribute('id');
                 }
@@ -526,13 +522,10 @@
                 }
             });
         }
-
         window.addEventListener('scroll', highlightNavigation);
-        document.addEventListener('DOMContentLoaded', highlightNavigation); // Call on load too
+        document.addEventListener('DOMContentLoaded', highlightNavigation);
 
-        // Skill Progress Bars Animation
         const progressBars = document.querySelectorAll('.progress-bar-enhanced');
-
         function animateProgressBars() {
             progressBars.forEach(bar => {
                 const rect = bar.getBoundingClientRect();
@@ -542,10 +535,8 @@
                 }
             });
         }
-
         window.addEventListener('scroll', animateProgressBars);
 
-        // Floating Particles Animation (for Hero)
         function createFloatingParticles() {
             const container = document.querySelector('.floating-particles');
             const particleCount = 50;
@@ -560,12 +551,9 @@
                 container.appendChild(particle);
             }
         }
-
         createFloatingParticles();
 
-        // Back to Top Button
         const backToTopBtn = document.getElementById('backToTop');
-
         window.addEventListener('scroll', function() {
             if (window.scrollY > 300) {
                 backToTopBtn.classList.add('show');
@@ -573,7 +561,6 @@
                 backToTopBtn.classList.remove('show');
             }
         });
-
         backToTopBtn.addEventListener('click', function(e) {
             e.preventDefault();
             window.scrollTo({
@@ -581,215 +568,165 @@
                 behavior: 'smooth'
             });
         });
-        // CV Download AND Open Functionality
-function downloadAndOpenCV() {
-    // First, download the file
-    const downloadLink = document.createElement('a');
-    downloadLink.href = 'MyResume.pdf';
-    downloadLink.download = 'Kumar_Swamy_Katari_Resume.pdf';
-    downloadLink.style.display = 'none';
-    
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-    
-    // Then, open the file in a new tab (slight delay to ensure download starts first)
-    setTimeout(() => {
-        window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
-    }, 100);
-    
-    // Show success message
-    showDownloadAndOpenMessage();
-}
 
-// Show download and open confirmation message
-function showDownloadAndOpenMessage() {
-    const message = document.createElement('div');
-    message.innerHTML = `
-        <div class="alert alert-success position-fixed" style="top: 20px; right: 20px; z-index: 9999; max-width: 300px;">
-            <i class="fas fa-check-circle me-2"></i>
-            CV is downloading and opening in a new tab!
-        </div>
-    `;
-    
-    document.body.appendChild(message);
-    
-    // Remove message after 4 seconds
-    setTimeout(() => {
-        if (document.body.contains(message)) {
-            document.body.removeChild(message);
+        function downloadAndOpenCV() {
+            const downloadLink = document.createElement('a');
+            downloadLink.href = 'MyResume.pdf';
+            downloadLink.download = 'Kumar_Swamy_Katari_Resume.pdf';
+            downloadLink.style.display = 'none';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+            setTimeout(() => {
+                window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+            }, 100);
+            showDownloadAndOpenMessage();
         }
-    }, 4000);
-}
 
-// Advanced: Download and Open with better error handling
-async function downloadAndOpenCVAdvanced() {
-    try {
-        // First, try to download the file
-        const response = await fetch('MyResume.pdf');
-        
-        if (!response.ok) {
-            throw new Error('PDF file not found');
+        function showDownloadAndOpenMessage() {
+            const message = document.createElement('div');
+            message.innerHTML = `
+                <div class="alert alert-success position-fixed" style="top: 20px; right: 20px; z-index: 9999; max-width: 300px;">
+                    <i class="fas fa-check-circle me-2"></i>
+                    CV is downloading and opening in a new tab!
+                </div>
+            `;
+            document.body.appendChild(message);
+            setTimeout(() => {
+                if (document.body.contains(message)) {
+                    document.body.removeChild(message);
+                }
+            }, 4000);
         }
-        
-        const blob = await response.blob();
-        
-        // Create download link
-        const url = window.URL.createObjectURL(blob);
-        const downloadLink = document.createElement('a');
-        downloadLink.href = url;
-        downloadLink.download = 'Kumar_Swamy_Katari_Resume.pdf';
-        downloadLink.style.display = 'none';
-        
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-        
-        // Open in new tab
-        setTimeout(() => {
-            window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
-        }, 100);
-        
-        // Clean up
-        window.URL.revokeObjectURL(url);
-        
-        showDownloadAndOpenMessage();
-        
-    } catch (error) {
-        console.error('Error accessing PDF:', error);
-        
-        // Fallback: just open the file
-        window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
-        
-        // Show fallback message
-        const message = document.createElement('div');
-        message.innerHTML = `
-            <div class="alert alert-info position-fixed" style="top: 20px; right: 20px; z-index: 9999; max-width: 300px;">
-                <i class="fas fa-info-circle me-2"></i>
-                CV opened in new tab. Right-click and save to download.
-            </div>
-        `;
-        document.body.appendChild(message);
-        
-        setTimeout(() => {
-            if (document.body.contains(message)) {
-                document.body.removeChild(message);
+
+        async function downloadAndOpenCVAdvanced() {
+            try {
+                const response = await fetch('MyResume.pdf');
+                if (!response.ok) {
+                    throw new Error('PDF file not found');
+                }
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const downloadLink = document.createElement('a');
+                downloadLink.href = url;
+                downloadLink.download = 'Kumar_Swamy_Katari_Resume.pdf';
+                downloadLink.style.display = 'none';
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+                setTimeout(() => {
+                    window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+                }, 100);
+                window.URL.revokeObjectURL(url);
+                showDownloadAndOpenMessage();
+            } catch (error) {
+                console.error('Error accessing PDF:', error);
+                window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+                const message = document.createElement('div');
+                message.innerHTML = `
+                    <div class="alert alert-info position-fixed" style="top: 20px; right: 20px; z-index: 9999; max-width: 300px;">
+                        <i class="fas fa-info-circle me-2"></i>
+                        CV opened in new tab. Right-click and save to download.
+                    </div>
+                `;
+                document.body.appendChild(message);
+                setTimeout(() => {
+                    if (document.body.contains(message)) {
+                        document.body.removeChild(message);
+                    }
+                }, 5000);
             }
-        }, 5000);
-    }
-}
+        }
 
-// Alternative: User choice approach
-function handleCVClick() {
-    // Create a small modal or use confirm to ask user preference
-    const userChoice = confirm("Would you like to download the CV?\n\nClick 'OK' to download and view\nClick 'Cancel' to just view online");
-    
-    if (userChoice) {
-        downloadAndOpenCV();
-    } else {
-        window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
-    }
-}
-// EmailJS Configuration
-const EMAILJS_CONFIG = {
-    SERVICE_ID: 'service_igcso7d',
-    TEMPLATE_ID: 'template_contact_us',
-    AUTO_REPLY_TEMPLATE: 'template_auto_reply',
-    PUBLIC_KEY: 'gDbU1408cKTkFElcB'
-};
+        function handleCVClick() {
+            const userChoice = confirm("Would you like to download the CV?\n\nClick 'OK' to download and view\nClick 'Cancel' to just view online");
+            if (userChoice) {
+                downloadAndOpenCV();
+            } else {
+                window.open('MyResume.pdf', '_blank', 'noopener,noreferrer');
+            }
+        }
 
-// Initialize EmailJS
-emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
-
-// Contact Form Handling with Email Functionality
-const contactForm = document.getElementById('contactForm');
-const messageStatus = document.getElementById('messageStatus');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-
-        // Get form data
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
+        const EMAILJS_CONFIG = {
+            SERVICE_ID: 'service_igcso7d',
+            TEMPLATE_ID: 'template_contact_us',
+            AUTO_REPLY_TEMPLATE: 'template_auto_reply',
+            PUBLIC_KEY: 'gDbU1408cKTkFElcB'
         };
+        emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
 
-        // Validate form data
-        if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-            showMessage('Please fill in all fields.', 'error');
-            return;
+        const contactForm = document.getElementById('contactForm');
+        const messageStatus = document.getElementById('messageStatus');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('message').value
+                };
+
+                if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+                    showMessage('Please fill in all fields.', 'error');
+                    return;
+                }
+
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+
+                try {
+                    await emailjs.send(
+                        EMAILJS_CONFIG.SERVICE_ID,
+                        EMAILJS_CONFIG.TEMPLATE_ID,
+                        {
+                            from_name: formData.name,
+                            from_email: formData.email,
+                            subject: formData.subject,
+                            message: formData.message,
+                            to_email: 'katarikumarswamy@gmail.com'
+                        }
+                    );
+
+                    await emailjs.send(
+                        EMAILJS_CONFIG.SERVICE_ID,
+                        EMAILJS_CONFIG.AUTO_REPLY_TEMPLATE,
+                        {
+                            to_name: formData.name,
+                            to_email: formData.email,
+                            user_name: formData.name,
+                            user_email: formData.email,
+                            subject: formData.subject,
+                            original_subject: formData.subject,
+                            reply_subject: `Re: ${formData.subject}`,
+                            inquiry_subject: formData.subject,
+                            message_subject: formData.subject,
+                            original_message: formData.message
+                        }
+                    );
+                    showMessage(`Thank you, ${formData.name}! Your message has been sent successfully. You should receive a confirmation email shortly.`, 'success');
+                    contactForm.reset();
+                } catch (error) {
+                    console.error('Email sending failed:', error);
+                    showMessage('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
+                } finally {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            });
         }
 
-        // Show loading state
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        submitBtn.disabled = true;
-
-        try {
-            // Send email to you (the portfolio owner)
-            await emailjs.send(
-                EMAILJS_CONFIG.SERVICE_ID,
-                EMAILJS_CONFIG.TEMPLATE_ID,
-                {
-                    from_name: formData.name,
-                    from_email: formData.email,
-                    subject: formData.subject,
-                    message: formData.message,
-                    to_email: 'katarikumarswamy@gmail.com'
-                }
-            );
-
-            // Send auto-reply to the user - FIXED VERSION
-            await emailjs.send(
-                EMAILJS_CONFIG.SERVICE_ID,
-                EMAILJS_CONFIG.AUTO_REPLY_TEMPLATE,
-                {
-                    to_name: formData.name,
-                    to_email: formData.email,
-                    user_name: formData.name,  // Alternative parameter name
-                    user_email: formData.email, // Alternative parameter name
-                    subject: formData.subject,  // Use 'subject' instead of 'original_subject'
-                    original_subject: formData.subject, // Keep both for compatibility
-                    reply_subject: `Re: ${formData.subject}`, // Professional reply format
-                    inquiry_subject: formData.subject, // Another common parameter name
-                    message_subject: formData.subject, // Yet another option
-                    original_message: formData.message // Include original message if needed
-                }
-            );
-
-            showMessage(`Thank you, ${formData.name}! Your message has been sent successfully. You should receive a confirmation email shortly.`, 'success');
-            contactForm.reset();
-
-        } catch (error) {
-            console.error('Email sending failed:', error);
-            showMessage('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
-        } finally {
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
+        function showMessage(message, type) {
+            const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
+            messageStatus.innerHTML = `<div class="alert ${alertClass}">${message}</div>`;
+            setTimeout(() => {
+                messageStatus.innerHTML = '';
+            }, 8000);
         }
-    });
-}
 
-// Function to show status messages
-function showMessage(message, type) {
-    const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
-    messageStatus.innerHTML = `<div class="alert ${alertClass}">${message}</div>`;
-    
-    // Clear message after 8 seconds
-    setTimeout(() => {
-        messageStatus.innerHTML = '';
-    }, 8000);
-}
-
-
-
-        // Form Field Focus Effects
         const formControls = document.querySelectorAll('.form-control');
-
         formControls.forEach(control => {
             control.addEventListener('focus', function() {
                 this.parentElement.classList.add('focused');
@@ -802,31 +739,24 @@ function showMessage(message, type) {
             });
         });
 
-        // Intersection Observer for Advanced Animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate');
-
-                    // Trigger progress bar animations when skills section is visible
                     if (entry.target.id === 'skills') {
                         setTimeout(animateProgressBars, 200);
                     }
                 }
             });
         }, observerOptions);
-
-        // Observe sections for animations
         sections.forEach(section => {
             observer.observe(section);
         });
 
-        // Typewriter Effect for Hero Title
         function typeWriter(element, text, speed = 100) {
             let i = 0;
             element.innerHTML = '';
@@ -838,11 +768,9 @@ function showMessage(message, type) {
                     setTimeout(type, speed);
                 }
             }
-
             type();
         }
 
-        // Initialize typewriter effect after page load
         setTimeout(() => {
             const heroTitle = document.querySelector('.hero-title');
             if (heroTitle) {
@@ -850,8 +778,6 @@ function showMessage(message, type) {
                 typeWriter(heroTitle, originalText, 80);
             }
         }, 1500);
-
-        // Parallax Effect for Hero Section
 
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
@@ -861,8 +787,6 @@ function showMessage(message, type) {
             }
         });
 
-
-        // Dynamic Cursor Effect
         const cursor = document.createElement('div');
         cursor.className = 'custom-cursor';
         cursor.style.cssText = `
@@ -884,7 +808,6 @@ function showMessage(message, type) {
             cursor.style.top = e.clientY + 'px';
         });
 
-        // Scale cursor on hover over interactive elements
         document.addEventListener('mouseover', (e) => {
             if (e.target.matches('a, button, .btn, .card, .skill-card, .cert-card')) {
                 cursor.style.transform = 'translate(-50%, -50%) scale(2)';
@@ -893,8 +816,6 @@ function showMessage(message, type) {
             }
         });
 
-
-        // Performance monitoring
         if ('performance' in window) {
             window.addEventListener('load', function() {
                 const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
@@ -902,12 +823,10 @@ function showMessage(message, type) {
             });
         }
 
-        // Error handling
         window.addEventListener('error', function(e) {
             console.error('JavaScript error:', e.error);
         });
 
-        // Service Worker for offline support (progressive web app)
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js')
                 .then(registration => console.log('SW registered'))
